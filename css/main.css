@@ -172,6 +172,10 @@ svg {
   background-repeat: no-repeat;
 }
 
+.hero__body .test-img {
+  display: none;
+}
+
 .hero__title {
   font-weight: 800;
   font-size: 20px;
@@ -241,6 +245,49 @@ svg {
   }
   .hero .btn {
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .hero__wrapper {
+    background-image: url(../../images/bg-line-desktop.png);
+    background-size: cover;
+    background-position: center bottom -10px;
+    background-repeat: no-repeat;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+  }
+  .hero__body {
+    height: 878px;
+    padding-top: 228.5px;
+    background-image: url(../../images/girl-desktop.png);
+    background-size: 842px 718px;
+    background-position: right bottom 10px;
+    background-repeat: no-repeat;
+    margin-right: -137px;
+    padding-right: 137px;
+    position: relative;
+  }
+  .hero__body .test-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .hero__title {
+    font-size: 58px;
+    margin-bottom: 24px;
+    max-width: 640px;
+  }
+  .hero__top-promo {
+    font-size: 20px;
+    line-height: 1.65%;
+  }
+  .hero__bottom-promo {
+    max-width: 600px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.65%;
   }
 }
 

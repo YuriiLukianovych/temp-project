@@ -31,6 +31,10 @@
       background-size: 208px 177.5px;
       background-position: center bottom 47px;
       background-repeat: no-repeat;
+
+      .test-img {
+         display: none;
+      }
    }
 
    // .hero__title
@@ -126,57 +130,65 @@
 }
 
 // for desktop, min-width=1344px
-// @media screen and (min-width: 1344px) {
-//    .hero {
-//       //hero__wrapper
-//       &__wrapper {
-//          background-image: url(../../images/bg-line-desktop.png);
-//          background-size: cover;
-//          background-position: center bottom -10px;
-//          background-repeat: no-repeat;
+@media screen and (min-width: 1344px) {
+   .hero {
+      //hero__wrapper
+      &__wrapper {
+         background-image: url(../../images/bg-line-desktop.png);
+         background-size: cover;
+         background-position: center bottom -10px;
+         background-repeat: no-repeat;
 
-//          margin-bottom: -10px;
-//          padding-bottom: 10px;
-//       }
+         margin-bottom: -10px;
+         padding-bottom: 10px;
+      }
 
-//       // .hero__body
-//       &__body {
-//          height: 878px;
-//          padding-top: 228.5px;
+      // .hero__body
+      &__body {
+         height: 878px;
+         padding-top: 228.5px;
 
-//          background-image: url(../../images/girl-desktop.png);
-//          background-size: 842px 718px;
-//          background-position: right bottom 10px;
-//          background-repeat: no-repeat;
+         background-image: url(../../images/girl-desktop.png);
+         background-size: 842px 718px;
+         background-position: right bottom 10px;
+         background-repeat: no-repeat;
 
-//          margin-right: -137px;
-//          padding-right: 137px;
-//       }
+         margin-right: -137px;
+         padding-right: 137px;
+         position: relative;
 
-//       // .hero__title
-//       &__title {
-//          font-size: 58px;
+         .test-img {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+      }
 
-//          margin-bottom: 24px;
-//          max-width: 640px;
-//       }
+      // .hero__title
+      &__title {
+         font-size: 58px;
 
-//       // .hero__top-promo
-//       &__top-promo {
-//          font-size: 20px;
-//          line-height: 1.65%;
-//       }
+         margin-bottom: 24px;
+         max-width: 640px;
+      }
 
-//       // .hero__bottom-promo
-//       &__bottom-promo {
-//          max-width: 600px;
-//          margin-bottom: 40px;
+      // .hero__top-promo
+      &__top-promo {
+         font-size: 20px;
+         line-height: 1.65%;
+      }
 
-//          font-size: 20px;
-//          line-height: 1.65%;
-//       }
-//    }
-// }
+      // .hero__bottom-promo
+      &__bottom-promo {
+         max-width: 600px;
+         margin-bottom: 40px;
+
+         font-size: 20px;
+         line-height: 1.65%;
+      }
+   }
+}
 
 .about {
    .container {
