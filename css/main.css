@@ -150,15 +150,15 @@ svg {
 }
 
 .hero {
-  max-width: 1680px;
+  max-width: 1900px;
   margin: 0 auto;
 }
 
 .hero__wrapper {
-  background-image: url(../../images/bg-line-mobile.png);
-  background-size: cover;
-  background-position: center bottom -25px;
-  background-repeat: no-repeat;
+  background-image: url(../../images/girl-mobile.png), url(../../images/bg-line-mobile.png);
+  background-size: 208px 177.5px, cover;
+  background-position: center bottom 47px, center bottom -25px;
+  background-repeat: no-repeat, no-repeat;
   margin-bottom: -25px;
   padding-bottom: 25px;
 }
@@ -166,14 +166,6 @@ svg {
 .hero__body {
   height: 618px;
   padding-top: 109.5px;
-  background-image: url(../../images/girl-mobile.png);
-  background-size: 208px 177.5px;
-  background-position: center bottom 47px;
-  background-repeat: no-repeat;
-}
-
-.hero__body .test-img {
-  display: none;
 }
 
 .hero__title {
@@ -217,22 +209,16 @@ svg {
 
 @media screen and (min-width: 768px) {
   .hero__wrapper {
-    background-image: url(../../images/bg-line-tablet.png);
-    background-size: cover;
-    background-position: center bottom -25px;
-    background-repeat: no-repeat;
+    background-image: url(../../images/girl-tablet.png), url(../../images/bg-line-tablet.png);
+    background-size: 376px 320px, cover;
+    background-position: right bottom 64px, center bottom -25px;
+    background-repeat: no-repeat, no-repeat;
     margin-bottom: -25px;
     padding-bottom: 25px;
   }
   .hero__body {
     height: 556.5px;
     padding-top: 158px;
-    background-image: url(../../images/girl-tablet.png);
-    background-size: 376px 320px;
-    background-position: right bottom 64px;
-    background-repeat: no-repeat;
-    margin-right: -22px;
-    padding-right: 22px;
   }
   .hero__title {
     font-size: 26px;
@@ -250,29 +236,16 @@ svg {
 
 @media screen and (min-width: 1344px) {
   .hero__wrapper {
-    background-image: url(../../images/bg-line-desktop.png);
-    background-size: cover;
-    background-position: center bottom -10px;
-    background-repeat: no-repeat;
+    background-image: url(../../images/girl-desktop.png), url(../../images/bg-line-desktop.png);
+    background-size: 842px 718px, cover;
+    background-position: right 18px bottom 20px, center bottom -10px;
+    background-repeat: no-repeat, no-repeat;
     margin-bottom: -10px;
     padding-bottom: 10px;
   }
   .hero__body {
-    height: 878px;
+    height: 950px;
     padding-top: 228.5px;
-    background-image: url(../../images/girl-desktop.png);
-    background-size: 842px 718px;
-    background-position: right bottom 10px;
-    background-repeat: no-repeat;
-    margin-right: -137px;
-    padding-right: 137px;
-    position: relative;
-  }
-  .hero__body .test-img {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
   .hero__title {
     font-size: 58px;
@@ -281,19 +254,25 @@ svg {
   }
   .hero__top-promo {
     font-size: 20px;
-    line-height: 1.65%;
+    line-height: 1.65;
   }
   .hero__bottom-promo {
-    max-width: 600px;
+    max-width: 640px;
     margin-bottom: 40px;
     font-size: 20px;
-    line-height: 1.65%;
+    line-height: 1.65;
   }
 }
 
 .about .container {
   border: 1px solid #000;
   margin-bottom: 50px;
+}
+
+.box {
+  width: 100%;
+  height: 50px;
+  background-color: tomato;
 }
 
 .container {

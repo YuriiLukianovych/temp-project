@@ -14,11 +14,10 @@
 
    //hero__wrapper
    &__wrapper {
-      background-image: url(../../images/girl-mobile.png),
-         url(../../images/bg-line-mobile.png);
-      background-size: 208px 177.5px, cover;
-      background-position: center bottom 47px, center bottom -25px;
-      background-repeat: no-repeat, no-repeat;
+      background-image: url(../../images/bg-line-mobile.png);
+      background-size: cover;
+      background-position: center bottom -25px;
+      background-repeat: no-repeat;
 
       margin-bottom: -25px;
       padding-bottom: 25px;
@@ -28,6 +27,11 @@
    &__body {
       height: 618px;
       padding-top: 109.5px;
+
+      background-image: url(../../images/girl-mobile.png);
+      background-size: 208px 177.5px;
+      background-position: center bottom 47px;
+      background-repeat: no-repeat;
    }
 
    // .hero__title
@@ -81,22 +85,27 @@
    .hero {
       //hero__wrapper
       &__wrapper {
-         background-image: url(../../images/girl-tablet.png),
-            url(../../images/bg-line-tablet.png);
-         background-size: 376px 320px, cover;
-         background-position: right bottom 64px, center bottom -25px;
-         background-repeat: no-repeat, no-repeat;
+         background-image: url(../../images/bg-line-tablet.png);
+         background-size: cover;
+         background-position: center bottom -25px;
+         background-repeat: no-repeat;
 
          margin-bottom: -25px;
          padding-bottom: 25px;
-         // margin-right: -22px;
-         // padding-right: 22px;
       }
 
       // .hero__body
       &__body {
          height: 556.5px;
          padding-top: 158px;
+
+         background-image: url(../../images/girl-tablet.png);
+         background-size: 376px 320px;
+         background-position: right bottom 64px;
+         background-repeat: no-repeat;
+
+         margin-right: -22px;
+         padding-right: 22px;
       }
 
       // .hero__title
@@ -120,32 +129,29 @@
 // for desktop, min-width=1344px
 @media screen and (min-width: 1344px) {
    .hero {
-      // .container {
-      //    max-width: 1688;
-      //    padding-left: 187px;
-      //    padding-left: 187px;
-      //    margin: 0 auto;
-      // }
-      // min-width: 1688px;
       //hero__wrapper
       &__wrapper {
-         background-image: url(../../images/girl-desktop.png),
-            url(../../images/bg-line-desktop.png);
-         background-size: 842px 718px, cover;
-         background-position: right 18px bottom 20px, center bottom -10px;
-         background-repeat: no-repeat, no-repeat;
+         background-image: url(../../images/bg-line-desktop.png);
+         background-size: cover;
+         background-position: center bottom -10px;
+         background-repeat: no-repeat;
 
          margin-bottom: -10px;
          padding-bottom: 10px;
-
-         // margin-right: -137px;
-         // padding-right: 137px;
       }
 
       // .hero__body
       &__body {
          height: 950px;
          padding-top: 228.5px;
+
+         background-image: url(../../images/girl-desktop.png);
+         background-size: 842px 718px;
+         background-position: right bottom 10px;
+         background-repeat: no-repeat;
+
+         margin-right: -100px;
+         padding-right: 100x;
       }
 
       // .hero__title
@@ -164,7 +170,7 @@
 
       // .hero__bottom-promo
       &__bottom-promo {
-         max-width: 640px;
+         // max-width: 600px;
          margin-bottom: 40px;
 
          font-size: 20px;
@@ -178,9 +184,4 @@
       border: 1px solid #000;
       margin-bottom: 50px;
    }
-}
-.box {
-   width: 100%;
-   height: 50px;
-   background-color: tomato;
 }
