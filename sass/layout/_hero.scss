@@ -1,3 +1,99 @@
 .hero {
-   // здесь будут мои стили
+   .logo,
+   .logo--tablet-menu,
+   .logo--mobile,
+   .logo--mobile-menu {
+      display: block;
+   }
+}
+
+.hero {
+   max-width: 1680px;
+   margin: 0 auto;
+
+   // .hero__top
+   &__top {
+      height: 618px;
+      padding-top: 109.5px;
+
+      background-image: url(../images/girls.png),
+         url(../images/bg-line-mobile.png);
+      background-size: 208px 177.5px, auto auto;
+      background-position: center bottom 47px, top -25px left;
+      background-repeat: no-repeat, no-repeat;
+
+      margin-bottom: -25px;
+      padding-bottom: 25px;
+   }
+
+   // .hero__title
+
+   &__title {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 1.36;
+      letter-spacing: 0.03em;
+      color: var(--black-color);
+
+      margin-bottom: 30px;
+   }
+
+   // .hero__top-promo
+
+   &__top-promo {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.57;
+      letter-spacing: 0.08em;
+      color: var(--grey-color);
+   }
+
+   // .hero__bottom-promo
+
+   &__bottom-promo {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.57;
+      letter-spacing: 0.08em;
+      color: var(--black-color);
+
+      margin-bottom: 30px;
+      span {
+         color: var(--orange-color);
+      }
+   }
+
+   // .hero__bottom
+
+   &__bottom {
+      height: 50px;
+      outline: 1px solid #000;
+   }
+   .container {
+      height: 100%;
+   }
+   .btn {
+      margin: 0 auto;
+   }
+}
+
+// for tablet, min-width=768px
+@media screen and (min-width: 768px) {
+   .hero {
+      max-width: 768px;
+      // .hero__top
+      &__top {
+         height: 556.5px;
+         padding-top: 158px;
+
+         background-image: url(../images/girls.png),
+            url(../images/bg-line-mobile.png);
+         background-size: 208px 177.5px, auto auto;
+         background-position: center bottom 47px, top -25px left;
+         background-repeat: no-repeat, no-repeat;
+
+         margin-bottom: -25px;
+         padding-bottom: 25px;
+      }
+   }
 }
