@@ -15,12 +15,3 @@
 // utils
 @import './utils/container';
 @import './utils/variables';
-
-.hero {
-   .logo,
-   .logo--tablet-menu,
-   .logo--mobile,
-   .logo--mobile-menu {
-      display: block;
-   }
-}

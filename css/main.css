@@ -328,11 +328,4 @@ svg {
   --mob-grey-color: #3d3d3d;
   --bcg-section: #e5e5e5;
 }
-
-.hero .logo,
-.hero .logo--tablet-menu,
-.hero .logo--mobile,
-.hero .logo--mobile-menu {
-  display: block;
-}
 /*# sourceMappingURL=main.css.map */
