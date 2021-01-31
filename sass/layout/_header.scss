@@ -1,3 +1,111 @@
+// стили для хедера ----------------------------------------   h e a d e r   ----------------
 .header {
-   // здесь будут мои стили
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   // .header__body
+   &__body {
+      height: 89px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   // .header__menu
+   &__menu {
+      // display: flex;
+      margin-left: auto;
+   }
+}
+.container {
+}
+.logo {
+   // .logo__image
+
+   &__image {
+      width: 80px;
+      height: 28px;
+   }
+}
+.menu {
+   // .menu__list
+
+   &__list {
+      list-style: none;
+      @media screen and (min-width: 1344px) {
+         display: flex;
+      }
+   }
+
+   // .menu__item
+
+   &__item {
+   }
+
+   // .menu__link
+
+   &__link {
+   }
+}
+.btn {
+}
+.burger {
+   width: 30px;
+   height: 20px;
+   background-color: red;
+}
+
+@media screen and (max-width: 767px) {
+   .logo {
+      display: none;
+   }
+   .logo-menu-tablet {
+      display: none;
+   }
+   .header__menu {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      padding: 0 20px;
+
+      .mobile-menu {
+         height: 89px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         margin-bottom: 20px;
+      }
+      .logo-menu-tablet {
+         display: none;
+      }
+      .logo-menu-mobile {
+         // .logo__image
+
+         &__image {
+            display: block;
+            width: 80px;
+            height: 28px;
+         }
+      }
+      .burger-close {
+         width: 30px;
+         height: 20px;
+         background-color: rgb(60, 255, 0);
+      }
+
+      .menu {
+         margin-bottom: 50px;
+      }
+      .btn {
+         margin: 0 auto;
+      }
+   }
 }
