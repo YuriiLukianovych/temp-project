@@ -142,6 +142,199 @@ svg {
   color: var(--white-color);
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header__body {
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.menu__link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--orange-color);
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-open {
+  width: 21px;
+  height: 14px;
+}
+
+.burger-close {
+  width: 17px;
+  height: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    display: none;
+  }
+  .logo__image {
+    width: 80px;
+    height: 28px;
+  }
+  .logo-mobile {
+    display: block;
+  }
+  .logo-menu-tablet {
+    display: none;
+  }
+  .logo-menu-mobile {
+    display: block;
+  }
+  .header__menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 21, 24, 0.9);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__menu.is-open {
+    left: 0;
+  }
+  .header__menu .mobile-menu {
+    height: 89px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header__menu .menu {
+    margin-bottom: 50px;
+  }
+  .header__menu .btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1343px) {
+  .header__body {
+    height: 128px;
+  }
+  .logo {
+    display: block;
+  }
+  .logo__image {
+    width: 128px;
+    height: 45px;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .logo-menu-tablet {
+    display: block;
+  }
+  .logo-menu-mobile {
+    display: none;
+  }
+  .header__menu-tablet {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 21, 24, 0.9);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__menu-tablet.is-open {
+    left: 0;
+  }
+  .header__menu-tablet .mobile-menu {
+    height: 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .header__menu .btn {
+    margin-right: 40px;
+  }
+  .menu__link {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1344px) {
+  .header__body {
+    height: 130px;
+  }
+  .logo {
+    display: block;
+  }
+  .logo__image {
+    width: 128px;
+    height: 45px;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .logo-menu-tablet {
+    display: none;
+  }
+  .logo-menu-mobile {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.214;
+    text-transform: uppercase;
+    color: var(--grey-color);
+  }
+  .menu__list {
+    display: flex;
+  }
+  .menu__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header__menu {
+    display: flex;
+    align-items: center;
+  }
+  .header__menu .container {
+    padding: 0;
+  }
+  .header__menu .btn {
+    margin-left: 60px;
+  }
+}
+
 .hero .logo,
 .hero .logo--tablet-menu,
 .hero .logo--mobile,
@@ -155,10 +348,10 @@ svg {
 }
 
 .hero__wrapper {
-  background-image: url(../../images/girl-mobile.png), url(../../images/bg-line-mobile.png);
-  background-size: 208px 177.5px, cover;
-  background-position: center bottom 47px, center bottom -25px;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../../images/bg-line-mobile.png);
+  background-size: cover;
+  background-position: center bottom -25px;
+  background-repeat: no-repeat;
   margin-bottom: -25px;
   padding-bottom: 25px;
 }
@@ -200,6 +393,10 @@ svg {
 
 .hero .container {
   height: 100%;
+  background-image: url(../../images/girl-mobile.png);
+  background-size: 208px 177.5px;
+  background-position: center bottom 47px;
+  background-repeat: no-repeat;
 }
 
 .hero .btn {
@@ -208,13 +405,19 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
+  .hero .container {
+    background-image: url(../../images/girl-tablet.png);
+    background-size: 376px 320px;
+    background-position: right 18px bottom 64px;
+    background-repeat: no-repeat;
+  }
   .hero__wrapper {
-    background-image: url(../../images/girl-tablet.png), url(../../images/bg-line-tablet.png);
-    background-size: 376px 320px, cover;
-    background-position: right bottom 64px, center bottom -25px;
-    background-repeat: no-repeat, no-repeat;
-    margin-bottom: -25px;
-    padding-bottom: 25px;
+    background-image: url(../../images/bg-line-tablet.png);
+    background-size: cover;
+    background-position: center bottom -10px;
+    background-repeat: no-repeat;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
   }
   .hero__body {
     height: 556.5px;
@@ -235,11 +438,17 @@ svg {
 }
 
 @media screen and (min-width: 1344px) {
+  .hero .container {
+    background-image: url(../../images/girl-desktop.png);
+    background-size: 842px 718px;
+    background-position: right -120px bottom 20px;
+    background-repeat: no-repeat;
+  }
   .hero__wrapper {
-    background-image: url(../../images/girl-desktop.png), url(../../images/bg-line-desktop.png);
-    background-size: 842px 718px, cover;
-    background-position: right 18px bottom 20px, center bottom -10px;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url(../../images/bg-line-desktop.png);
+    background-size: cover;
+    background-position: center bottom -10px;
+    background-repeat: no-repeat;
     margin-bottom: -10px;
     padding-bottom: 10px;
   }
@@ -264,6 +473,15 @@ svg {
   }
 }
 
+@media screen and (min-width: 1688px) {
+  .hero .container {
+    max-width: 1688px;
+    padding-left: 183px;
+    padding-right: 183px;
+    background-position: right bottom 20px;
+  }
+}
+
 .about .container {
   border: 1px solid #000;
   margin-bottom: 50px;
@@ -273,6 +491,11 @@ svg {
   width: 100%;
   height: 50px;
   background-color: tomato;
+}
+
+.green {
+  height: 100px;
+  background-color: green;
 }
 
 .container {

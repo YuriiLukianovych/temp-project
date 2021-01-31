@@ -72,5 +72,14 @@
 <path fill="#ff6b09" style="fill: var(--color1, #ff6b09)" d="M56.489 4.422c-0.178-0.027-0.3-0.192-0.272-0.368 0.020-0.131 0.138-0.804 0.458-1.142 0.123-0.13 0.329-0.137 0.461-0.015s0.138 0.327 0.015 0.457c-0.135 0.143-0.251 0.553-0.289 0.798-0.028 0.174-0.192 0.297-0.372 0.27z"></path>
 <path fill="#ff6b09" style="fill: var(--color1, #ff6b09)" d="M44.608 6.032c-0.062-0.24-0.217-0.637-0.366-0.766-0.135-0.118-0.149-0.322-0.030-0.456s0.324-0.148 0.46-0.030c0.351 0.305 0.535 0.963 0.568 1.092 0.045 0.173-0.060 0.349-0.235 0.393-0.178 0.044-0.353-0.063-0.397-0.232z"></path>
 </symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.7647" d="M1.882 29.168l27.286-27.286"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.7647" d="M29.168 29.168l-27.286-27.286"></path>
+</symbol>
+<symbol id="icon-menu" viewBox="0 0 21 14">
+<path d="M0 1H20.5" stroke="black" stroke-width="2"/>
+<path d="M0 7H20.5" stroke="black" stroke-width="2"/>
+<path d="M0 13H20.5" stroke="black" stroke-width="2"/>
+</symbol>
 </defs>
 </svg>

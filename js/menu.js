@@ -1,16 +1,29 @@
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[data-menu]");
-  const bodyh2 = document.querySelector("[data-body]");
-  
-    menuBtnRef.addEventListener("click", () => {
-      const expanded =
-        menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-  
-      menuBtnRef.classList.toggle("is-open");
-      menuBtnRef.setAttribute("aria-expanded", !expanded);
-  
-      mobileMenuRef.classList.toggle("is-open");
-      // bodyh2.classList.toggle('is-blocked');
-    });
-  })();
+  const menuBtnOpen = document.querySelector("[data-menu-button-open]");
+  const menuBtnClose = document.querySelector("[data-menu-button-close]");
+  const mobileMenuRef = document.querySelector("[data-menu-mobile]");
+  const tabletMenuRef = document.querySelector("[data-menu-tablet]");
+
+  // MOBILE and TABLET Menu Open
+  menuBtnOpen.addEventListener("click", () => {
+    // const expanded =
+    //   menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    // menuBtnRef.classList.toggle("is-open");
+    // menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    mobileMenuRef.classList.add("is-open");
+    tabletMenuRef.classList.add("is-open");
+  });
+  // MOBILE and TABLET Menu Close
+  menuBtnClose.addEventListener("click", () => {
+    // const expanded =
+    //   menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    // menuBtnRef.classList.toggle("is-open");
+    // menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    mobileMenuRef.classList.remove("is-open");
+    tabletMenuRef.classList.remove("is-open");
+  });
+})();
