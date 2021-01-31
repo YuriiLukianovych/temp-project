@@ -76,33 +76,45 @@
                </svg>
             </a>
             <div class="header__menu">
-               <div class="mobile-menu">
-                  <!-- <div class="container"> -->
-                     <a href="#" class="logo-menu-tablet">
-                        <svg class="logo__image">
-                           <use href="./images/sprite.svg#logo--tablet-menu"></use>
-                        </svg>
-                     </a>
-                     <a href="#" class="logo-menu-mobile">
-                        <svg class="logo__image">
-                           <use href="./images/sprite.svg#logo--mobile-menu"></use>
-                        </svg>
-                     </a>
-                     <div class="burger-close"></div>
-                  <!-- </div> -->
+               <div class="container">
+                  <div class="header__menu-wrapper">
+                     <div class="mobile-menu">
+                           <a href="#" class="logo-menu-tablet">
+                              <svg class="logo__image">
+                                 <use href="./images/sprite.svg#logo--tablet-menu"></use>
+                              </svg>
+                           </a>
+                           <a href="#" class="logo-menu-mobile">
+                              <svg class="logo__image">
+                                 <use href="./images/sprite.svg#logo--mobile-menu"></use>
+                              </svg>
+                           </a>
+                           
+                           <button type="button" class="menu-button">
+                              <svg class="burger-close">
+                                 <use href="./images/sprite.svg#icon-close"></use>
+                              </svg>
+                           </button>
+                     </div>
+                     <nav class="menu">
+                        <ul class="menu__list">
+                           <li class="menu__item"><a href="#" class="menu__link">Программа обучения</a></li>
+                           <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                           <li class="menu__item"><a href="#" class="menu__link">Варианты обучения</a></li>
+                           <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <button class="btn">Подписаться!</button>
                </div>
-               <nav class="menu">
-                  <ul class="menu__list">
-                     <li class="menu__item"><a href="#" class="menu__link">menu</a></li>
-                     <li class="menu__item"><a href="#" class="menu__link">menu</a></li>
-                     <li class="menu__item"><a href="#" class="menu__link">menu</a></li>
-                     <li class="menu__item"><a href="#" class="menu__link">menu</a></li>
-                     <li class="menu__item"><a href="#" class="menu__link">menu</a></li>
-                  </ul>
-               </nav>
-               <button class="btn">Подписаться!</button>
             </div>
-            <div class="burger"></div>
+            
+            <button type="button" class="menu-button">
+               <svg class="burger-open">
+                  <use href="./images/sprite.svg#icon-menu"></use>
+               </svg>
+            </button>
+
          </div>
       </div>
    </header>

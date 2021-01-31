@@ -147,6 +147,7 @@ svg {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: tomato;
 }
 
 .header__body {
@@ -175,10 +176,29 @@ svg {
   }
 }
 
-.burger {
-  width: 30px;
-  height: 20px;
-  background-color: red;
+.menu__link {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--orange-color);
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-open {
+  width: 21px;
+  height: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -190,12 +210,11 @@ svg {
   }
   .header__menu {
     position: fixed;
-    left: 0;
+    left: -50%;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
+    background-color: rgba(17, 21, 24, 0.9);
   }
   .header__menu .mobile-menu {
     height: 89px;
@@ -213,9 +232,8 @@ svg {
     height: 28px;
   }
   .header__menu .burger-close {
-    width: 30px;
-    height: 20px;
-    background-color: #3cff00;
+    width: 17px;
+    height: 17px;
   }
   .header__menu .menu {
     margin-bottom: 50px;
