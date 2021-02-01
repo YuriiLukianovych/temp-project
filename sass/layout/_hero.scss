@@ -11,7 +11,7 @@
    max-width: 1900px;
    margin: 0 auto;
    //hero__wrapper
-   &__wrapper {
+   &__top {
       background-image: url(../../images/bg-line-mobile.png);
       background-size: cover;
       background-position: center bottom -25px;
@@ -81,6 +81,27 @@
       margin-right: auto;
       margin-left: auto;
    }
+   &__bottom {
+      margin-top: 30px;
+      margin-bottom: 50px;
+   }
+   &__list {
+      list-style: none;
+      max-width: 240px;
+      margin: 0 auto;
+   }
+   &__item {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.43;
+      letter-spacing: 0.08em;
+      color: var(--black-color);
+
+      padding-left: 70px;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
 }
 
 // for tablet, min-width=768px ------------------------------------------------------------------
@@ -93,7 +114,7 @@
          background-repeat: no-repeat;
       }
       //hero__wrapper
-      &__wrapper {
+      &__top {
          background-image: url(../../images/bg-line-tablet.png);
          background-size: cover;
          background-position: center bottom -10px;
@@ -142,7 +163,7 @@
          background-repeat: no-repeat;
       }
 
-      &__wrapper {
+      &__top {
          background-image: url(../../images/bg-line-desktop.png);
          background-size: cover;
          background-position: center bottom -10px;
