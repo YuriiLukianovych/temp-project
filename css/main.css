@@ -356,6 +356,14 @@ svg {
   padding-bottom: 25px;
 }
 
+.hero__top .container {
+  height: 100%;
+  background-image: url(../../images/girl-mobile.png);
+  background-size: 208px 177.5px;
+  background-position: center bottom 47px;
+  background-repeat: no-repeat;
+}
+
 .hero__body {
   height: 618px;
   padding-top: 109.5px;
@@ -391,14 +399,6 @@ svg {
   color: var(--orange-color);
 }
 
-.hero .container {
-  height: 100%;
-  background-image: url(../../images/girl-mobile.png);
-  background-size: 208px 177.5px;
-  background-position: center bottom 47px;
-  background-repeat: no-repeat;
-}
-
 .hero .btn {
   margin-right: auto;
   margin-left: auto;
@@ -411,7 +411,7 @@ svg {
 
 .hero__list {
   list-style: none;
-  max-width: 240px;
+  width: 240px;
   margin: 0 auto;
 }
 
@@ -424,17 +424,29 @@ svg {
   padding-left: 70px;
 }
 
+.hero__item:nth-child(1) {
+  background-image: url(../../images/student.svg), url(../../images/rectangle.svg);
+  background-position: left 13px center, left center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.hero__item:nth-child(2) {
+  background-image: url(../../images/mobile_learning.svg), url(../../images/rectangle.svg);
+  background-position: left 10px center, left center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.hero__item:nth-child(3) {
+  background-image: url(../../images/insurance.svg), url(../../images/rectangle.svg);
+  background-position: left 12px center, left center;
+  background-repeat: no-repeat, no-repeat;
+}
+
 .hero__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .hero .container {
-    background-image: url(../../images/girl-tablet.png);
-    background-size: 376px 320px;
-    background-position: right 18px bottom 64px;
-    background-repeat: no-repeat;
-  }
   .hero__top {
     background-image: url(../../images/bg-line-tablet.png);
     background-size: cover;
@@ -442,6 +454,12 @@ svg {
     background-repeat: no-repeat;
     margin-bottom: -10px;
     padding-bottom: 10px;
+  }
+  .hero__top .container {
+    background-image: url(../../images/girl-tablet.png);
+    background-size: 376px 320px;
+    background-position: right 18px bottom 64px;
+    background-repeat: no-repeat;
   }
   .hero__body {
     height: 556.5px;
@@ -459,15 +477,37 @@ svg {
   .hero .btn {
     margin-left: 0;
   }
+  .hero__bottom {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .hero__list {
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .hero__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    color: var(--black-color);
+    padding-left: 70px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    max-width: 215px;
+  }
+  .hero__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1344px) {
-  .hero .container {
-    background-image: url(../../images/girl-desktop.png);
-    background-size: 842px 718px;
-    background-position: right -120px bottom 20px;
-    background-repeat: no-repeat;
-  }
   .hero__top {
     background-image: url(../../images/bg-line-desktop.png);
     background-size: cover;
@@ -475,6 +515,12 @@ svg {
     background-repeat: no-repeat;
     margin-bottom: -10px;
     padding-bottom: 10px;
+  }
+  .hero__top .container {
+    background-image: url(../../images/girl-desktop.png);
+    background-size: 842px 718px;
+    background-position: right -120px bottom 20px;
+    background-repeat: no-repeat;
   }
   .hero__body {
     height: 950px;
