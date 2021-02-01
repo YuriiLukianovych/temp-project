@@ -348,7 +348,7 @@ svg {
 }
 
 .hero__top {
-  background-image: url(../../images/bg-line-mobile.png);
+  background-image: url(../images/bg-line-mobile.png);
   background-size: cover;
   background-position: center bottom -25px;
   background-repeat: no-repeat;
@@ -358,7 +358,7 @@ svg {
 
 .hero__top .container {
   height: 100%;
-  background-image: url(../../images/girl-mobile.png);
+  background-image: url(../images/girl-mobile.png);
   background-size: 208px 177.5px;
   background-position: center bottom 47px;
   background-repeat: no-repeat;
@@ -428,21 +428,21 @@ svg {
 }
 
 .hero__item:nth-child(1) {
-  background-image: url(../../images/student.svg), url(../../images/rectangle.svg);
+  background-image: url(../images/student.svg), url(../images/rectangle.svg);
   background-position: left 13px center, left center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto, 58px 60px;
 }
 
 .hero__item:nth-child(2) {
-  background-image: url(../../images/mobile_learning.svg), url(../../images/rectangle.svg);
+  background-image: url(../images/mobile_learning.svg), url(../images/rectangle.svg);
   background-position: left 10px center, left center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto, 58px 60px;
 }
 
 .hero__item:nth-child(3) {
-  background-image: url(../../images/insurance.svg), url(../../images/rectangle.svg);
+  background-image: url(../images/insurance.svg), url(../images/rectangle.svg);
   background-position: left 12px center, left center;
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto, 58px 60px;
@@ -454,7 +454,7 @@ svg {
 
 @media screen and (min-width: 768px) {
   .hero__top {
-    background-image: url(../../images/bg-line-tablet.png);
+    background-image: url(../images/bg-line-tablet.png);
     background-size: cover;
     background-position: center bottom -10px;
     background-repeat: no-repeat;
@@ -462,7 +462,7 @@ svg {
     padding-bottom: 10px;
   }
   .hero__top .container {
-    background-image: url(../../images/girl-tablet.png);
+    background-image: url(../images/girl-tablet.png);
     background-size: 376px 320px;
     background-position: right 18px bottom 64px;
     background-repeat: no-repeat;
@@ -504,7 +504,7 @@ svg {
 
 @media screen and (min-width: 1344px) {
   .hero__top {
-    background-image: url(../../images/bg-line-desktop.png);
+    background-image: url(../images/bg-line-desktop.png);
     background-size: cover;
     background-position: center bottom -10px;
     background-repeat: no-repeat;
@@ -512,7 +512,7 @@ svg {
     padding-bottom: 10px;
   }
   .hero__top .container {
-    background-image: url(../../images/girl-desktop.png);
+    background-image: url(../images/girl-desktop.png);
     background-size: 842px 718px;
     background-position: right -120px bottom 20px;
     background-repeat: no-repeat;
