@@ -22,7 +22,7 @@
       .container {
          height: 100%;
 
-         background-image: url(../images/girl-mobile.png);
+         background-image: url(../images/girls-mobile.png);
          background-size: 208px 177.5px;
          background-position: center bottom 47px;
          background-repeat: no-repeat;
@@ -118,6 +118,18 @@
    }
 }
 
+// добавляет фоновые изображения для ретины
+@media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+   .hero__top {
+      background-image: url(../images/bg-line-mobile@2x.png);
+   }
+   .hero__top .container {
+      background-image: url(../images/girls-mobile@2x.png);
+   }
+}
+
 // for tablet, min-width=768px ------------------------------------------------------------------
 @media screen and (min-width: 768px) {
    .hero {
@@ -131,7 +143,7 @@
          padding-bottom: 10px;
 
          .container {
-            background-image: url(../images/girl-tablet.png);
+            background-image: url(../images/girls-tablet.png);
             background-size: 376px 320px;
             background-position: right 18px bottom 64px;
             background-repeat: no-repeat;
@@ -176,6 +188,18 @@
          }
       }
    }
+
+   // добавляет фоновые изображения для ретины
+   @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero__top {
+         background-image: url(../images/bg-line-tablet@2x.png);
+      }
+      .hero__top .container {
+         background-image: url(../images/girls-tablet@2x.png);
+      }
+   }
 }
 
 // for desktop, min-width=1344px ----------------------------------------------------------------
@@ -191,7 +215,7 @@
          padding-bottom: 10px;
 
          .container {
-            background-image: url(../images/girl-desktop.png);
+            background-image: url(../images/girls-desktop.png);
             background-size: 842px 718px;
             background-position: right -120px bottom 20px;
             background-repeat: no-repeat;
@@ -249,6 +273,18 @@
             background-position: left 24px center, left center;
             background-size: 42px 48px, 100px 102px;
          }
+      }
+   }
+
+   // добавляет фоновые изображения для ретины
+   @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero__top {
+         background-image: url(../images/bg-line-desktop@2x.png);
+      }
+      .hero__top .container {
+         background-image: url(../images/girls-desktop@2x.png);
       }
    }
 }
