@@ -626,10 +626,47 @@ svg {
   --bcg-section: #e5e5e5;
 }
 
+a {
+  display: block;
+  margin-right: 100px;
+  position: relative;
+}
+
+a:nth-child(1)::before {
+  display: block;
+  content: '1';
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
+a:nth-child(2)::before {
+  display: block;
+  content: '2';
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
+a:nth-child(3)::before {
+  display: block;
+  content: '3';
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
 .wrapper {
   margin: 50px;
   height: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -637,7 +674,6 @@ svg {
 .logo {
   display: inline-flex;
   position: relative;
-  transform: scale(3);
 }
 
 .letters {
@@ -658,6 +694,32 @@ svg {
   animation-iteration-count: infinite;
 }
 
+.fire2 {
+  width: 22px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 48%;
+  transform-origin: bottom center;
+  animation-name: flame2;
+  animation-duration: 700ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+.fire3 {
+  width: 22px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 48%;
+  transform-origin: bottom center;
+  animation-name: flame3;
+  animation-duration: 1700ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
 @keyframes flame {
   0% {
     fill: #ff5e00;
@@ -666,6 +728,36 @@ svg {
   50% {
     fill: #ff6b09;
     transform: translateY(-3px) rotate(7deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(0deg);
+    fill: orangered;
+  }
+}
+
+@keyframes flame2 {
+  0% {
+    fill: #ff5e00;
+    transform: rotate(0deg);
+  }
+  50% {
+    fill: #ff6b09;
+    transform: translateY(-8px) rotate(0deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(0deg);
+    fill: orangered;
+  }
+}
+
+@keyframes flame3 {
+  0% {
+    fill: #ff5e00;
+    transform: rotate(0deg);
+  }
+  50% {
+    fill: #ff6b09;
+    transform: rotate(15deg) scale(1.2);
   }
   100% {
     transform: rotate(0deg);
