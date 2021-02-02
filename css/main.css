@@ -665,7 +665,7 @@ svg {
   }
   50% {
     fill: #ff6b09;
-    transform: translateY(-3px) rotate(3deg);
+    transform: translateY(-3px) rotate(7deg) scale(0.95);
   }
   100% {
     transform: rotate(0deg);
