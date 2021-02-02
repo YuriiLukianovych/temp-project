@@ -1,11 +1,11 @@
-.hero {
-   .logo,
-   .logo--tablet-menu,
-   .logo--mobile,
-   .logo--mobile-menu {
-      display: block;
-   }
-}
+// .hero {
+//    .logo,
+//    .logo--tablet-menu,
+//    .logo--mobile,
+//    .logo--mobile-menu {
+//       display: block;
+//    }
+// }
 
 .hero {
    max-width: 1900px;
@@ -298,20 +298,4 @@
          background-position: right bottom 20px;
       }
    }
-}
-
-.about {
-   .container {
-      border: 1px solid #000;
-      margin-bottom: 50px;
-   }
-}
-.box {
-   width: 100%;
-   height: 50px;
-   background-color: tomato;
-}
-.green {
-   height: 100px;
-   background-color: green;
 }

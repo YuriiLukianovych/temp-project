@@ -16,3 +16,54 @@
 // utils
 @import './utils/container';
 @import './utils/variables';
+
+.wrapper {
+   margin: 50px;
+   //    background-color: #cfcfcf;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.logo {
+   display: inline-flex;
+   position: relative;
+   transform: scale(3);
+}
+.letters {
+   width: 128px;
+   height: 45px;
+}
+.fire {
+   width: 22px;
+   height: 30px;
+   position: absolute;
+   top: 0;
+   left: 48%;
+   transform-origin: bottom center;
+   animation-name: flame;
+   animation-duration: 1500ms;
+   animation-iteration-count: infinite;
+}
+
+@keyframes flame {
+   0% {
+      //   transform: rotate(0deg);
+      fill: rgb(255, 94, 0);
+      transform: rotate(0deg);
+   }
+   25% {
+      transform: translateY(-3px) rotate(7deg);
+   }
+   50% {
+      //   transform: rotate(7deg);
+      fill: #ff6b09;
+      transform: translateY(-3px);
+   }
+
+   100% {
+      transform: rotate(0deg);
+      //   transform: rotate(7deg);
+      fill: orangered;
+   }
+}
