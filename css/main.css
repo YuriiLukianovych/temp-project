@@ -757,7 +757,7 @@ a:nth-child(3)::before {
   }
   50% {
     fill: #ff6b09;
-    transform: rotate(15deg) scale(1.2);
+    transform: rotate(15deg) scale(1.4);
   }
   100% {
     transform: rotate(0deg);
